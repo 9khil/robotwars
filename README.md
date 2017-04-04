@@ -10,6 +10,8 @@ The Zumo 32U4 robot consists of the Zumo chassis, the Zumo 32U4 Main Board, and 
 
 https://www.pololu.com/docs/0J63
 
+Note: Sumo rules dictate that the robot field is black with white borders. The code in our exercise has been modified to supported a inverted field (white with black borders).
+
 ## Setup
 
 ### Install Arduino IDE
