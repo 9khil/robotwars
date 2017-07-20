@@ -27,20 +27,21 @@ unsigned int lineSensorValues[NUM_SENSORS];
 
 void waitForButtonAndCountDown()
 {
+  /* 1. See setup() */
   /* 2. Turn on yellow LED, clear LCD and add "Press A" text to LCD */
-  
+
 
   /* 3. Wait for button A to be pressed */
- 
 
- /* 4. Turn of Yellow LED and clear LCD */
+
+ /* 4. Turn off Yellow LED and clear LCD */
 
   // Play audible countdown.
   for (int i = 0; i < 3; i++)
   {
     delay(1000);
     /* 5. play note G in octave 3, for 200 millisecs. Full volume (15) */
-    
+
   }
   delay(1000);
   buzzer.playNote(NOTE_G(4), 500, 15);
@@ -51,7 +52,7 @@ void setup()
 {
   /* 1. Initialize ThreeSensors on the lineSensor object */
 
-  
+
   waitForButtonAndCountDown();
 }
 
@@ -67,9 +68,9 @@ void loop()
   }
 
   /* 6. Read line sensor values */
-  
 
-  
+
+
   if (lineSensorValues[0] > QTR_THRESHOLD)
   {
     // If leftmost sensor detects line, reverse and turn to the
@@ -77,20 +78,20 @@ void loop()
     motors.setSpeeds(-REVERSE_SPEED, -REVERSE_SPEED);
     delay(REVERSE_DURATION);
 
-    /* 7. Add three code lines for setting turn speed to turn right (+/- TURN_SPEED), 
+    /* 7. Add three code lines for setting turn speed to turn right (+/- TURN_SPEED),
      *  add turn duration delay and then continuing forward.
      */
-   
+
   }
   else if (lineSensorValues[NUM_SENSORS - 1] > QTR_THRESHOLD)
   {
     /* 8.  If rightmost sensor detects line, reverse and turn to the
      left. */
-   
+
   }
   else
   {
     /* 9. Otherwise, go straight.*/
-    
+
   }
 }
