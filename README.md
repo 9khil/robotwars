@@ -1,8 +1,8 @@
 # Pololu Zumo32U4 exercises
 
-Version: 1.0.0<br/>
+Version: 1.0.1<br/>
 Based on Pololu software and git repo.<br/>
-Find out more at http://bouvet.no/robotwars
+Find out more at http://robotwars.labben.org
 
 ## Summary
 
@@ -38,7 +38,7 @@ Follow this tutorial: https://www.pololu.com/docs/0J63/5.2
 
 ## Exercises
 
-Clone this repo and solve the lessons provided. By solving all lessons you will be able to put together the bare minimums to qualify for a Sumo match. Read more about the Sumo match rules at http://bouvet.no/robotwars
+Clone this repo and solve the lessons provided. By solving all lessons you will be able to put together the bare minimums to qualify for a Sumo match. Read more about the Sumo match rules at http://robotwars.labben.org
 
 Try to solve the lessons only using the documentation provided here: http://pololu.github.io/zumo-32u4-arduino-library/annotated.html
 
