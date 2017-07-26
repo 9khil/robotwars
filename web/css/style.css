@@ -1,0 +1,26 @@
+#quickJumpContainer{
+    display: none;
+}
+
+img{
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    #quickJumpContainer{
+        display: block;
+        position: fixed;
+    }
+}
+
+footer{
+    background-color: #666666;
+    color: #fff;
+    padding: 20px;
+}
+
+footer a,
+footer a:link,
+footer a:visited{
+    color: #fff;
+}
