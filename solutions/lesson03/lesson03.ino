@@ -17,7 +17,7 @@ backs up and turns. */
 #define TURN_DURATION     300  // ms
 
 Zumo32U4LCD lcd;
-Zumo32U4ButtonA buttonA;
+Zumo32U4ButtonB buttonB;
 Zumo32U4Buzzer buzzer;
 Zumo32U4Motors motors;
 Zumo32U4LineSensors lineSensors;
@@ -29,9 +29,9 @@ void waitForButtonAndCountDown()
 {
   ledYellow(1);
   lcd.clear();
-  lcd.print(F("Press A"));
+  lcd.print(F("Press B"));
 
-  buttonA.waitForButton();
+  buttonB.waitForButton();
 
   ledYellow(0);
   lcd.clear();
@@ -56,12 +56,12 @@ void setup()
 
 void loop()
 {
-  if (buttonA.isPressed())
+  if (buttonB.isPressed())
   {
     // If button is pressed, stop and wait for another press to
     // go again.
     motors.setSpeeds(0, 0);
-    buttonA.waitForRelease();
+    buttonB.waitForRelease();
     waitForButtonAndCountDown();
   }
 

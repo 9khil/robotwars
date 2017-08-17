@@ -4,13 +4,13 @@ the pushbuttons on the Zumo.*/
 #include <Wire.h>
 #include <Zumo32U4.h>
 
-Zumo32U4ButtonA buttonA;
+Zumo32U4ButtonB buttonA;
 Zumo32U4LCD lcd;
 
 void setup()
 {
   lcd.clear();
-  lcd.print(F("Press A"));
+  lcd.print(F("Press B"));
 
   /* 1. Use the waitForButton() function, which blocks and
    * doesn't return until a button press and release are
