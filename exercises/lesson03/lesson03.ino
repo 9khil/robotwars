@@ -28,7 +28,7 @@ unsigned int lineSensorValues[NUM_SENSORS];
 void waitForButtonAndCountDown()
 {
   /* 1. See setup() */
-  /* 2. Turn on yellow LED, clear LCD and add "Press A" text to LCD */
+  /* 2. Turn on yellow LED, clear LCD and add "Press B" text to LCD */
 
 
   /* 3. Wait for button B to be pressed */
