@@ -67,7 +67,7 @@ void loop()
 
   lineSensors.read(lineSensorValues);
 
-  if (lineSensorValues[0] > QTR_THRESHOLD)
+  if (lineSensorValues[0] > QTR_THRESHOLD) //flip aligator sign if you want to detect white edges on a black board instead of black border on a white board.
   {
     // If leftmost sensor detects line, reverse and turn to the
     // right.
@@ -77,7 +77,7 @@ void loop()
     delay(TURN_DURATION);
     motors.setSpeeds(FORWARD_SPEED, FORWARD_SPEED);
   }
-  else if (lineSensorValues[NUM_SENSORS - 1] > QTR_THRESHOLD)
+  else if (lineSensorValues[NUM_SENSORS - 1] > QTR_THRESHOLD) //flip aligator sign if you want to detect white edges on a black board instead of black border on a white board.
   {
     // If rightmost sensor detects line, reverse and turn to the
     // left.
