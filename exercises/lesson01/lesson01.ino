@@ -4,7 +4,7 @@ the pushbuttons on the Zumo.*/
 #include <Wire.h>
 #include <Zumo32U4.h>
 
-Zumo32U4ButtonB buttonA;
+Zumo32U4ButtonB buttonB;
 Zumo32U4LCD lcd;
 
 void setup()
