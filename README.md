@@ -46,4 +46,4 @@ Try to solve the lessons only using the documentation provided here: http://polo
 
 Arduino programming language reference: https://www.arduino.cc/en/Reference/HomePage
 </br>
-For complete Pololu Z32U4 documentation, see http://pololu.github.io/zumo-32u4-arduino-library/annotated.html.  If you are already on that page, then click on the links in the "Classes and functions" section above.
+For complete Pololu Z32U4 documentation, see http://pololu.github.io/zumo-32u4-arduino-library/index.html.  If you are already on that page, then click on the links in the "Classes and functions" section above.
